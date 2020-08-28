@@ -99,3 +99,17 @@ function randomColor() {
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r + ", " + g + ", " + b + ")";
 }
+
+
+
+
+document.getElementById("help").addEventListener("click", function() {
+  overlay.style.visibility = "visible";
+  overlay.style.opacity = 1;
+} );
+
+document.getElementById("btnClose").addEventListener("click", function() {
+  setTimeout(function(){ overlay.style.visibility = "hidden"; }, 500);
+  overlay.style.opacity = 0;
+  
+} );
